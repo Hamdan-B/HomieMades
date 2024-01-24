@@ -1,2 +1,2 @@
 # HomieMades
-Just some component designs.
+Just some FRONT-END component designs.
