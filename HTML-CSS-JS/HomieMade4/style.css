@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.Cont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 100px;
+  margin: auto;
+}
+.creditCont {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 1%;
+}
+.creditCont a {
+  text-decoration: none;
+  color: rgb(255, 208, 0);
+  font-size: larger;
+  font-style: italic;
+  font-weight: 700;
+}
+
+/*Main stuff below*/
+
+:root {
+  --BtnWidth: 100px;
+  --BtnHeight: 34px;
+}
+
+.btnCont {
+  display: block;
+  width: var(--BtnWidth);
+  height: var(--BtnHeight);
+}
+.arrow {
+  border: solid rgba(0, 0, 0, 0.685);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.btnCont button {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border: none;
+  padding: 10px;
+  width: var(--BtnWidth);
+  height: var(--BtnHeight);
+  border-radius: 20px;
+  color: white;
+  position: absolute;
+}
+.btnCont:hover {
+  width: calc(var(--BtnWidth) * 4.5);
+}
+
+.Btn:nth-child(2) {
+  transform: translateX(10px);
+  z-index: 3;
+}
+.Btn:nth-child(3) {
+  transform: translateX(20px);
+  z-index: 2;
+}
+.Btn:nth-child(4) {
+  transform: translateX(30px);
+  z-index: 1;
+}
+
+body:has(.btnCont:hover) .Btn:nth-child(2) {
+  transform: translateX(110%);
+}
+body:has(.btnCont:hover) .Btn:nth-child(3) {
+  transform: translateX(215%);
+}
+body:has(.btnCont:hover) .Btn:nth-child(4) {
+  transform: translateX(320%);
+}
+.disBtn {
+  z-index: 4;
+}
+.Btn {
+  content: "SOme BUTTON";
+  cursor: pointer;
+  transition: all 400ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
+}
+.Btn:hover {
+  transition: 300ms ease;
+  color: black;
+  background-color: white;
+}
+
+/*Bouncy Transition:*/
+/* transition: all 400ms cubic-bezier(.47,1.64,.41,.8); */
