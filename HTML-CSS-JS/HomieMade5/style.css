@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(222, 246, 255);
+  color: rgb(2, 2, 2);
+}
+
+.Cont {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: flex;
+  justify-content: space-around;
+}
+.creditCont {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 1%;
+}
+.creditCont a {
+  text-decoration: none;
+  /* color: rgb(255, 181, 43); */
+  color: rgb(0, 132, 255);
+  font-size: larger;
+  font-style: italic;
+  font-weight: 700;
+}
+
+/*Main Stuff Below*/
+
+.Cont button {
+  width: 120px;
+  height: 44px;
+  background-color: cadetblue;
+  color: white;
+  font-weight: 400;
+  font-size: large;
+  cursor: pointer;
+  border: solid 4px rgb(18, 82, 99);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  transition: border-top-left-radius 300ms 600ms,
+    border-top-right-radius 300ms 400ms, border-bottom-right-radius 300ms 200ms,
+    border-bottom-left-radius 300ms 0ms, background-color 700ms 0ms;
+}
+.Cont button:hover {
+  background-color: rgb(18, 82, 99);
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  transition: border-top-left-radius 300ms 0s,
+    border-top-right-radius 300ms 200ms, border-bottom-right-radius 300ms 400ms,
+    border-bottom-left-radius 300ms 600ms, background-color 700ms 0ms;
+}
