@@ -39,23 +39,26 @@ body {
   height: 44px;
   background-color: cadetblue;
   color: white;
+  box-shadow: 0px 0px 0px grey;
   font-weight: 400;
   font-size: large;
   cursor: pointer;
   border: solid 4px rgb(18, 82, 99);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  transition: border-top-left-radius 300ms 600ms,
+  transition: all 700ms 0s, border-top-left-radius 300ms 600ms,
     border-top-right-radius 300ms 400ms, border-bottom-right-radius 300ms 200ms,
-    border-bottom-left-radius 300ms 0ms, background-color 700ms 0ms;
+    border-bottom-left-radius 300ms 0ms;
 }
 .Cont button:hover {
   background-color: rgb(18, 82, 99);
+  transform: translateY(-2px);
+  box-shadow: 0px 3px 4px grey;
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
-  transition: border-top-left-radius 300ms 0s,
+  transition: all 700ms 0s, border-top-left-radius 300ms 0s,
     border-top-right-radius 300ms 200ms, border-bottom-right-radius 300ms 400ms,
-    border-bottom-left-radius 300ms 600ms, background-color 700ms 0ms;
+    border-bottom-left-radius 300ms 600ms;
 }
