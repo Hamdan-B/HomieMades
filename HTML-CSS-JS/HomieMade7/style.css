@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(240, 239, 202);
+  color: rgb(0, 0, 0);
+}
+
+.Cont {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: flex;
+  justify-content: space-around;
+}
+.creditCont {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 1%;
+}
+.creditCont a {
+  text-decoration: none;
+  /* color: rgb(255, 181, 43); */
+  color: rgb(190, 0, 143);
+  font-size: larger;
+  font-style: italic;
+  font-weight: 700;
+}
+
+/*Main Stuff Below*/
+:root {
+  --bgColor: rgb(240, 239, 202);
+  --btnColor: rgb(31, 134, 182);
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+  border: solid 4px var(--btnColor);
+  background-color: transparent;
+  display: block;
+}
+.bgEffect {
+  width: 100px;
+  height: 100%;
+  background-color: aliceblue;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
