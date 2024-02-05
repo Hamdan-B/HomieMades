@@ -35,7 +35,7 @@ body {
 /*Main Stuff Below*/
 :root {
   --bgColor: rgb(240, 239, 202);
-  --btnColor: rgb(31, 134, 182);
+  --btnColor: rgb(64, 148, 187);
 }
 
 .btn {
@@ -43,13 +43,48 @@ body {
   height: 40px;
   border: solid 4px var(--btnColor);
   background-color: transparent;
-  display: block;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.Cont p {
+  font-family: system-ui;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: large;
+
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .bgEffect {
+  transition: height 400ms ease;
   width: 100px;
   height: 100%;
-  background-color: aliceblue;
+  background-color: var(--bgColor);
+  margin: 0;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: -1;
+}
+body:has(.btn:hover) .bgEffect {
+  transition: width 400ms ease, height 0ms 400ms ease;
+  width: 0px;
+  height: 0px;
+}
+.bgEffectColor {
+  transition: height 400ms ease;
+  width: 100px;
+  height: 100%;
+  background-color: var(--btnColor);
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: -2;
 }
