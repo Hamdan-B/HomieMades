@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(56, 56, 56);
+  color: rgb(255, 255, 255);
+}
+
+.Cont {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: flex;
+  justify-content: space-around;
+}
+.creditCont {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 1%;
+}
+.creditCont a {
+  text-decoration: none;
+  /* color: rgb(255, 181, 43); */
+  color: rgb(255, 208, 0);
+  font-size: larger;
+  font-style: italic;
+  font-weight: 700;
+}
+
+/*Main Stuff Below*/
+.belowCont {
+  width: 400px;
+  height: 400px;
+  background-color: aliceblue;
+  transform-style: preserve-3d;
+  transition: all 2s ease;
+}
+.belowCont:hover {
+  transform: perspective(500px) rotateY(-180deg);
+}
+
+/* change translateZ value to a negative(-) value to make it appear below the Container and a poitive(+) value to make it appear on top */
+.upCont {
+  width: 200px;
+  height: 200px;
+  background-color: #f96b59;
+  transform: translateZ(-4rem);
+  box-shadow: 0px 0px 10px black;
+}
