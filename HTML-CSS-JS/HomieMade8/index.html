@@ -15,10 +15,73 @@
       </p>
     </div>
     <div class="Cont">
-        <div class="belowCont">
-          <div class="upCont"></div>
+      <div class="switchCont">
+        SignUp
+        <label class="switch">
+          <input type="checkbox" onclick="toggleClass()" />
+          <span class="slider round"></span>
+        </label>
+        SignIn
+      </div>
+      <div class="belowCont" id="thatDiv">
+        <div class="formCont SignIn">
+          <div><h1>Sign In</h1></div>
+          <br />
+          <div>
+            <form>
+              <input
+                type="email"
+                name="email"
+                id="emailField"
+                placeholder="Email"
+              />
+              <input
+                type="password"
+                name="password"
+                id="passwordField"
+                placeholder="Password"
+              />
+            </form>
+          </div>
+          <br />
+          <div><button type="button">Sign In</button></div>
         </div>
-      </button>
+        <div class="formCont SignUp">
+          <div><h1>Sign Up</h1></div>
+          <br />
+          <div>
+            <form>
+              <input
+                type="text"
+                name="name"
+                id="nameField"
+                placeholder="First Name"
+              />
+              <input
+                type="email"
+                name="email"
+                id="emailField"
+                placeholder="Email"
+              />
+              <input
+                type="password"
+                name="password"
+                id="passwordField"
+                placeholder="Password"
+              />
+            </form>
+          </div>
+          <br />
+          <div><button type="button">Sign Up</button></div>
+        </div>
+      </div>
     </div>
   </body>
+
+  <script>
+    function toggleClass() {
+      var element = document.getElementById("thatDiv");
+      element.classList.toggle("rotClass");
+    }
+  </script>
 </html>

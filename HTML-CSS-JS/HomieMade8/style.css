@@ -7,6 +7,7 @@
 body {
   background-color: rgb(56, 56, 56);
   color: rgb(255, 255, 255);
+  font-family: "Courier New", Courier, monospace;
 }
 
 .Cont {
@@ -14,8 +15,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
-  display: flex;
-  justify-content: space-around;
+  text-align: center;
 }
 .creditCont {
   position: absolute;
@@ -35,20 +35,124 @@ body {
 /*Main Stuff Below*/
 .belowCont {
   width: 400px;
+  margin: auto;
+  margin-top: 12px;
   height: 400px;
-  background-color: aliceblue;
+  background-color: rgb(83, 157, 221);
   transform-style: preserve-3d;
-  transition: all 2s ease;
+  transition: all 1200ms ease;
+  transform: perspective(600px);
 }
-.belowCont:hover {
-  transform: perspective(500px) rotateY(-180deg);
+
+.rotClass {
+  transform: perspective(600px) rotateY(-180deg);
 }
 
 /* change translateZ value to a negative(-) value to make it appear below the Container and a poitive(+) value to make it appear on top */
-.upCont {
+.formCont {
   width: 200px;
-  height: 200px;
-  background-color: #f96b59;
-  transform: translateZ(-4rem);
-  box-shadow: 0px 0px 10px black;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  text-align: center;
+  padding: 20px;
+
+  /* background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18); */
+}
+.formCont input {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.18);
+  color: white;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 4px;
+  padding: 5px;
+  margin-top: 8px;
+  font-family: "Courier New", Courier, monospace;
+  box-shadow: 0px 2px 2px rgba(88, 88, 88, 0.185);
+}
+.formCont input::placeholder {
+  color: white;
+  opacity: 0.7;
+  letter-spacing: 1px;
+  font-family: "Times New Roman", Times, serif;
+}
+.formCont input:focus {
+  outline: none;
+}
+.formCont button {
+  padding: 10px;
+  background-color: rgb(0, 110, 255);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.SignIn {
+  transform: translateY(-50%) translateX(50%) translateZ(-4rem) rotateY(180deg);
+}
+.SignUp {
+  transform: translateY(-50%) translateX(50%) translateZ(4rem);
+}
+
+/*Toggle Switch*/
+.switchCont {
+  display: block;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #5bd0ff;
+  -webkit-transition: 1200ms ease;
+  transition: 1200ms ease;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 1200ms ease;
+  transition: 1200ms ease;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
