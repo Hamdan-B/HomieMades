@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-family: "Courier New", Courier, monospace;
+}
+
+.Cont {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+.creditCont {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 1%;
+}
+.creditCont a {
+  text-decoration: none;
+  /* color: rgb(255, 181, 43); */
+  color: rgb(0, 119, 255);
+  font-size: larger;
+  font-style: italic;
+  font-weight: 700;
+}
+
+/*Main Stuff Below*/
+
+/*Store image width and height, below is just and example height value*/
+:root {
+  --imgHeight: 300px;
+}
+.poster {
+  position: relative;
+  width: 200px;
+  height: var(--imgHeight);
+}
+.poster img {
+  position: absolute;
+  transform: translateX(-50%);
+}
+.posterTitle {
+  height: 100px;
+  z-index: 2;
+
+  bottom: 0px;
+  scale: 1;
+
+  transition: all 700ms ease;
+}
+.posterBG {
+  height: var(--imgHeight);
+
+  transform-style: preserve-3d;
+  transform-origin: center;
+
+  transition: all 800ms ease;
+}
+.posterCharacter {
+  height: var(--imgHeight);
+
+  opacity: 0;
+  top: 40px;
+  transform: scale(0);
+
+  transition: all 700ms 100ms ease;
+}
+.poster:hover > .posterCharacter {
+  opacity: 1;
+  top: -40px;
+  transform: translateX(-50%) scale(1.2);
+}
+.poster:hover > .posterBG {
+  filter: blur(1px);
+  transform: translateX(-50%) perspective(800px) rotateX(25deg);
+}
+.poster:hover > .posterTitle {
+  transform: translateX(-50%) scale(1.2);
+  bottom: 15px;
+}
