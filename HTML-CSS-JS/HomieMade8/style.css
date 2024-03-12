@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgb(56, 56, 56);
+  background-color: rgb(0, 53, 114);
   color: rgb(255, 255, 255);
   font-family: "Courier New", Courier, monospace;
 }
@@ -39,6 +39,7 @@ body {
   margin-top: 12px;
   height: 400px;
   background-color: rgb(83, 157, 221);
+  border-radius: 20px;
   transform-style: preserve-3d;
   transition: all 1200ms ease;
   transform: perspective(600px);
