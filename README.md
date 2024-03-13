@@ -15,9 +15,10 @@ Welcome to HomieMade! This repository showcases creative component designs craft
 Feel free to explore, experiment, and use these components in your projects. Contributions and suggestions are welcome! Let's create and innovate together.
 
 ## Preview
-![HomieMade9-gif](https://github.com/Hamdan-B/HomieMades/assets/105585723/1bcfaca7-4208-46fb-bfb6-e4ba477bb75e)
-![HomieMade4-gif](https://github.com/Hamdan-B/HomieMades/assets/105585723/22b68a50-7257-4c91-94ec-46280782d26a)
-![HomieMade8-gif](https://github.com/Hamdan-B/HomieMades/assets/105585723/d4f32ab5-49c7-41ee-a004-a61eb25cd398)
+![HomieMade - Made with Clipchamp](https://github.com/Hamdan-B/HomieMades/assets/105585723/339b256e-3c6b-4cc0-9a1d-1b561d819324)
+![HomieMade9-gif](https://github.com/Hamdan-B/HomieMades/assets/105585723/6bc7fc25-df19-4b04-839b-cb3f15237bde)
+![HomieMade4-gif](https://github.com/Hamdan-B/HomieMades/assets/105585723/213e6ec0-a55e-4fa7-a65f-a3a790574254)
+
 
 ## How to Run
 
