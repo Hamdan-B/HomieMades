@@ -3,7 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SwiperJS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="style.css" />
+
     <title>Idk bruh</title>
   </head>
   <body>
@@ -14,12 +21,107 @@
         interest and exploration are appreciated.
       </p>
     </div>
-    <div class="Cont">
-      <div class="blurredCont">
-        <div class="btnCont">
-          <button type="button">Press</button>
+    <section>
+      <div class="content">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./Images/JujutsuKaisen.jpg" alt="" />
+              <div class="overlay">
+                <h2>Jujutsu Kaisen</h2>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img class="img-position" src="./Images/DemonSlayer.jpg" alt="" />
+              <div class="overlay">
+                <h2>Demon Slayer</h2>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./Images/AttackOnTitan.png" alt="" />
+              <div class="overlay">
+                <h2>Attack On Titan</h2>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./Images/Haikyuu.jpg" alt="" />
+              <div class="overlay">
+                <h2>Haikyuu</h2>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./Images/YourName.jpg" alt="" />
+              <div class="overlay">
+                <h2>Your Name</h2>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./Images/MyHeroAcademia.jpg" alt="" />
+              <div class="overlay">
+                <h2>My Hero Academia</h2>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                class="img-position"
+                src="./Images/ASilentVoice.jpg"
+                alt=""
+              />
+              <div class="overlay">
+                <h2>A Silent Voice</h2>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./Images/Naruto.jpg" alt="" />
+              <div class="overlay">
+                <h2>Naruto</h2>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./Images/OnePiece.jpg" alt="" />
+              <div class="overlay">
+                <h2>One Piece</h2>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper", {
+        effect: "cards",
+        grabCursor: true,
+        initialSlide: 2,
+        speed: 500,
+        loop: true,
+        rotate: true,
+        mousewheel: {
+          invert: false,
+        },
+      });
+    </script>
   </body>
 </html>
